@@ -1,0 +1,189 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Sayfanın içeriğini saran ana alan */
+main {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #108a24;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Bölümü */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: url('../img/hero.jpg') no-repeat center center/cover;
+    color: rgb(15, 12, 12);
+}
+
+/* Footer */
+footer {
+    background-color: #108a24;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    /* Footer'ı sayfa altına çekmek için */
+}
+
+/* Hakkımızda Bölümü */
+.about {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Hizmetler Bölümü */
+.services {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.services h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(16, 64, 167, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #444;
+}
+
+/* Galeri Bölümü */
+.gallery {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+}
+
+.gallery h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.contact-info {
+    padding: 80px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-info h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+}
+
+
+
+.hero-image {
+    width: 100%;
+    /* sayfa genişliği kadar yayılır */
+    height: 50%;
+    /* orantılı küçülüp büyür */
+    display: block;
+    margin: 10px auto 20px auto;
+    border-radius: 5px;
+}
