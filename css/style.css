@@ -170,7 +170,13 @@ footer {
     height: 200px;
     overflow: hidden;
     border-radius: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
 }
 
 .gallery-item img {
@@ -246,15 +252,13 @@ footer {
 
 /* navbardaki aktif sayfanın belirtilmesi */
 .nav-links li a.active {
-    color: #022ff8;
+    color: #ffffff;
     /* Örneğin dikkat çekici bir sarı */
     font-weight: bold;
-    border-bottom: 2px solid #022ff8;
+    border-bottom: 2px solid #ffffff;
     /* Alt çizgi ile vurgulama */
     padding-bottom: 2px;
 }
-
-
 
 
 
