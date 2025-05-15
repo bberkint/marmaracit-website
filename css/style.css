@@ -202,15 +202,23 @@ footer {
     margin-bottom: 15px;
 }
 
+.hero-images {
+    display: flex;
+    justify-content: center;
+    /* ortalar yatayda */
+    gap: 45px;
+    /* aralarında boşluk */
+    max-width: 100%;
+    /* genişlik sayfaya göre */
+    margin: 50px auto;
+}
 
 .hero-image {
-    width: 100%;
-    /* sayfa genişliği kadar yayılır */
-    height: 50%;
-    /* orantılı küçülüp büyür */
+    width: 400px;
+    height: 300px;
+    /* kırpma olmadan ortala ve büyüt/küçült */
+    border-radius: 8px;
     display: block;
-    margin: 10px auto 20px auto;
-    border-radius: 5px;
 }
 
 
