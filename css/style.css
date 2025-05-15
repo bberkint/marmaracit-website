@@ -17,7 +17,7 @@ main {
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #097205;
+    background-color: #057eb6;
     padding: 10px 20px;
     align-items: center;
 }
@@ -68,7 +68,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #097205;
+    background-color: #057eb6;
     color: white;
     text-align: center;
     padding: 10px;
@@ -118,11 +118,17 @@ footer {
 
 .card {
     text-decoration: none;
-    background-color: #f5f5f5;
+    background-color: #f0f0eafa;
     padding: 20px;
     border-radius: 20px;
     width: 300px;
-    box-shadow: 0 0 10px rgba(231, 239, 255, 0.1);
+    box-shadow: 0 0 10px rgba(229, 236, 224, 0.1);
+
+
+    animation-fill-mode: backwards;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
 }
 
 .card:hover {
@@ -131,6 +137,7 @@ footer {
 }
 
 .card h3 {
+    color: #1e33ee;
     margin-bottom: 10px;
     font-size: 20px;
 }
@@ -219,6 +226,12 @@ footer {
     /* kırpma olmadan ortala ve büyüt/küçült */
     border-radius: 8px;
     display: block;
+    /* animasyon*/
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
 }
 
 /* resimler boyutuna gore buyur kuculur */
@@ -233,10 +246,10 @@ footer {
 
 /* navbardaki aktif sayfanın belirtilmesi */
 .nav-links li a.active {
-    color: #90e77f;
+    color: #022ff8;
     /* Örneğin dikkat çekici bir sarı */
     font-weight: bold;
-    border-bottom: 2px solid #88f34a;
+    border-bottom: 2px solid #022ff8;
     /* Alt çizgi ile vurgulama */
     padding-bottom: 2px;
 }
@@ -382,4 +395,26 @@ footer {
     .contact-map iframe {
         height: 250px;
     }
+}
+
+
+/* Fade-in animasyon tanımı */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hero başlık ve paragrafları için animasyon */
+.hero h1,
+.hero p {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
 }
