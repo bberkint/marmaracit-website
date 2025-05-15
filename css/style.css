@@ -422,3 +422,8 @@ footer {
     animation-duration: 3s;
     animation-delay: 0.5s;
 }
+
+
+.nav-links li a i {
+    margin-right: 6px;
+}
