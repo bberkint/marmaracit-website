@@ -221,6 +221,17 @@ footer {
     display: block;
 }
 
+/* resimler boyutuna gore buyur kuculur */
+@media (max-width: 768px) {
+    .hero-image {
+        width: 90vw;
+        /* ekran genişliğinin %90'ı */
+        height: auto;
+        /* yükseklik otomatik */
+    }
+}
+
+
 
 
 /* Mobil cihazlar için (maksimum 768px genişlik) */
