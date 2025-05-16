@@ -22,8 +22,22 @@ main {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 10px;
+    /* ikon ile yazı arasında boşluk */
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+}
+
 .navbar .logo {
-    color: rgb(255, 254, 254);
+    color: rgb(238, 238, 238);
     font-size: 20px;
     font-weight: bold;
 }
